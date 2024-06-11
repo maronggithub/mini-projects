@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+container {
+    height: 100vh;;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 780px;
+}
+h1 {
+    padding: 20px;
+    margin-bottom: 40px;
+    color: #ff867a;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 209, 180, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 16px rgba(192, 189, 189, 0.3);
+}
+.to-do-list-box {
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255,209,180,.6);
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(192, 189, 189, 0.3);
+}
+.task-box {
+    padding: 10px;
+}
+h2 {
+    font-weight: bold;
+    border-left: solid 6px;
+    padding-left:10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+#to-do h2 {
+    color: #f7b78f;
+}
+#process h2 {
+    color:#ea9f3b;
+}
+#done h2 {
+    color: #704a67;
+}
+
+.list {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    width: 200px;
+    transition: ease 0.4s;
+}
+.task {
+    padding: 10px;
+    position: relative;
+    cursor: grab;
+    border-radius: 10px;
+    border:solid 2px;
+}
+#to-do .task {
+    border-color: #f7b78f;
+}
+#process .task {
+    border-color:#ea9f3b;
+}
+#done .task {
+    border-color:#704a67 ;
+}
+h3 {
+    margin-bottom: 5px;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+}
+
+#to-do .icon {
+    color: #f7b78f;
+}
+#process .icon {
+    color: #ea9f3b;
+}
+#done .icon {
+    color: #704a67;
+}
+.enter {
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 8px 16px rgba(192, 189, 189, 0.8);
+    transition: 0.4s ease;
+}

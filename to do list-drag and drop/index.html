@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <container>
+        <h1>Drag and drop a task to change the category</h1>
+        <div class="to-do-list-box">
+            <section id="to-do" class="task-box">
+                <h2 class="title">To Do</h2>
+                <div class="list">
+                    <div class="task" draggable="true">
+                        <div class="icon"><i class="fa-regular fa-circle"></i></div>
+                        <h3>Task 1</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                    <div class="task" draggable="true">
+                        <div class="icon"><i class="fa-regular fa-circle"></i></div>
+                        <h3>Task 2</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+            </section>
+            <section id="process" class="task-box">
+                <h2 class="title">In Progress</h2>
+                <div class="list">
+                    <div class="task" draggable="true">
+                        <div class="icon"><i class="fa-solid fa-circle-half-stroke"></i></div>
+                        <h3>Task 3</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+            </section>
+            <section id="done" class="task-box">
+                <h2 class="title">Completed</h2>
+                <div class="list"></div>
+            </section>
+        </div>
+    </container>
+    <script src="index.js"></script>
+</body>
+</html>
