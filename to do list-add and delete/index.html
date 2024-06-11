@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To Do List-Add and Delete</title>
+</head>
+<body>
+    <container>
+        
+        <section id="form-box">
+            <!-- <div id="be-add">Task already be added!</div> -->
+            <form id="form">
+                <label for="task-title" id="title">Please enter the task title</label>
+                <p id="error-message">Cannot exceed 10 characters</p>
+                <p id="text-require-message">Task title and detail are required.</p>
+                <input type="text" id="task-title" placeholder="Enter task title" required>
+                <label for="task-detail" id="detail">Please enter specific task details</label>
+                <textarea id="task-detail" rows="4" cols="50"></textarea>
+                <label for="due-date">Enter due date</label>
+                <input type="date" class="input" id="due-date">
+                <button id="add-task">Add Task</button>
+            </form>
+        </section>
+        <section id="task-box" class="task-container">
+            <h1 class="progress-status">In Progress</h1>
+            <ul class="todos" id="todos">
+                
+            </ul>
+        </section>
+        <section id="complete-box" class="task-container">
+            <h1 class="progress-status">Complete</h1>
+            <ul class="todos" id="complete-todos">
+            </ul>
+        </section>
+    </container>
+    <script src="script.js"></script>
+</body>
+</html>
