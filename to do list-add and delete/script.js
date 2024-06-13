@@ -6,6 +6,7 @@ const taskDetailinput = document.getElementById("task-detail");
 const dueDateinput = document.getElementById("due-date");
 const addTask = document.getElementById("add-task");
 const todoList = document.getElementById("todos");
+const completeList = document.getElementById("complete-todos");
 // const beAdded = document.getElementById("be-ad");
 let isComposing = false;
 
